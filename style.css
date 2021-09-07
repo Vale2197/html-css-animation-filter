@@ -187,16 +187,8 @@
         transform: rotate(0deg);
     }
 
-    25% {
-        transform: rotate(144deg);
-    }
-
-    50% {
-        transform: rotate(288deg);
-    }
-
     75% {
-        transform: rotate(144deg);
+        transform: rotate(288deg);
     }
 
     100% {
@@ -206,4 +198,46 @@
 }
 /* / ESERCIZIO 11 */
     
+/* ESERCIZIO 12 */
+.ex-12-top-white {
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-name: runTop;
+}
 
+@keyframes runTop {
+    0% {
+        left: 10%;
+    }
+    25% {
+        left: 30%;
+    }
+
+    50% {
+        left: calc(100% - 60px - 10%);
+    }
+}
+
+.ex-12-bottom-white {
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-name: runBottom;
+}
+
+@keyframes runBottom {
+    0% {
+        right: 20%;
+    }
+
+    25% {
+        right: calc(50%-20%);
+    }
+
+    50% {
+        right: calc(100% - 60px - 20%);
+    }
+}
+/* / ESERCIZIO 12 */
+    
